@@ -11,6 +11,7 @@ public class Main {
         Reading.readFile("TAProject/disease.txt");
         Reading.readFile("TAProject/medicine.txt");
         //Denis lox ksta
+        //Ckeck for commit ProttoDem
         System.out.println(DiseaseModel.getInstance().getModel().toString());
         System.out.println(MedicineModel.getInstance().getModel().toString());
     }
