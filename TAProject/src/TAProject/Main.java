@@ -11,7 +11,7 @@ public class Main {
         Reading.readFile("TAProject/disease.txt");
         Reading.readFile("TAProject/disease.txt");
 
-// Jenia lox
+// Jenia lox 2
         System.out.println(DiseaseModel.getInstance().getModel().toString());
         System.out.println(MedicineModel.getInstance().getModel().toString());
     }
