@@ -2,7 +2,14 @@ package TAProject;
 
 import TAProject.BD.DiseaseModel;
 import TAProject.BD.MedicineModel;
+import TAProject.Entities.Disease;
+import TAProject.Entities.Medicine;
 import TAProject.Methods.Reading;
+import TAProject.Methods.QuickSort;
+import TAProject.Methods.ShellSort;
+import TAProject.Methods.Sort;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -10,8 +17,10 @@ public class Main {
 
         Reading.readFile("TAProject/disease.txt");
         Reading.readFile("TAProject/disease.txt");
-        //Denis lox ksta
         System.out.println(DiseaseModel.getInstance().getModel().toString());
         System.out.println(MedicineModel.getInstance().getModel().toString());
+
+
+
     }
 }
