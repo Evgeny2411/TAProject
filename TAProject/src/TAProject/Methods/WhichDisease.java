@@ -6,7 +6,7 @@ import TAProject.Entities.Disease;
 import java.util.*;
 
 public class WhichDisease {
-    private final ArrayList<String> usersSymptoms = new ArrayList<>();
+    private ArrayList<String> usersSymptoms = new ArrayList<>();
     private final ArrayList<String[]> dbSymptoms = new ArrayList<>();
     private final ArrayList<String> names = new ArrayList<>();
     private final TreeMap<String, Disease> diseaseTreeMap = DiseaseModel.getInstance().getModel();
@@ -20,6 +20,7 @@ public class WhichDisease {
     }
 
     private void setSymptoms(String[] symptoms) {
+        usersSymptoms.clear();
         usersSymptoms.addAll(Arrays.asList(symptoms));
         setDbSymptoms();
     }
