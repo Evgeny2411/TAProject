@@ -6,7 +6,7 @@ import TAProject.Entities.Disease;
 import java.util.*;
 
 public class WhichDisease {
-    private ArrayList<String> usersSymptoms = new ArrayList<>();
+    private final ArrayList<String> usersSymptoms = new ArrayList<>();
     private final ArrayList<String[]> dbSymptoms = new ArrayList<>();
     private final ArrayList<String> names = new ArrayList<>();
     private final TreeMap<String, Disease> diseaseTreeMap = DiseaseModel.getInstance().getModel();
@@ -35,7 +35,6 @@ public class WhichDisease {
                 index = i;
             }
         }
-        System.out.println(names.get(index));
         return diseaseTreeMap.get(names.get(index));
     }
 
@@ -70,7 +69,7 @@ public class WhichDisease {
                     }
                 }
 
-                if (j < firstString.length - 1){ //&& firstString[j].length() > firstString[j + 1].length()) {
+                if (j < firstString.length - 1){
                     j++;
                 }
             }
