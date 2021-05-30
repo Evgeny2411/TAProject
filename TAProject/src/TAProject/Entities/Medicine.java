@@ -1,6 +1,8 @@
 package TAProject.Entities;
 
-public class Medicine {
+import java.util.Comparator;
+
+public class Medicine implements Comparable<Medicine> {
     private String name;
     private String cost;
     private String index;
@@ -21,5 +23,26 @@ public class Medicine {
 
     public String getIndex() {
         return index;
+    }
+
+    @Override
+    public int compareTo(Medicine m) {
+        return name.compareTo(m.name);
+    }
+
+    public static class MedicineNumberOfDosesComparator implements Comparator<Medicine> {
+        @Override
+        public int compare(Medicine o1, Medicine o2) {
+            return o1.getName().compareTo(o2.getName());
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Medicine{" +
+                "name='" + name + '\'' +
+                ", cost='" + cost + '\'' +
+                ", index='" + index + '\'' +
+                '}';
     }
 }
