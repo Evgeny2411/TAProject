@@ -19,12 +19,13 @@ public class WhichDisease {
         }
     }
 
-    public void setSymptoms(String[] symptoms) {
+    private void setSymptoms(String[] symptoms) {
         usersSymptoms.addAll(Arrays.asList(symptoms));
         setDbSymptoms();
     }
 
-    public Disease whichDisease() {
+    public Disease whichDisease(String[] symptoms) {
+        setSymptoms(symptoms);
         int tmp, max = 0, index = 0;
         for(int i = 0; i < names.size(); i++){
             tmp = longestSubString(dbSymptoms.get(i));

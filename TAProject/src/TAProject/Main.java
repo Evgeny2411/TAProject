@@ -19,7 +19,7 @@ public class Main {
 
         String[] userSymptoms = new String[]{"воспаление лимфоузлов","сиплый голос","боль в горле","температура"};
         WhichDisease whichDisease = new WhichDisease();
-        whichDisease.setSymptoms(userSymptoms);
+        whichDisease.whichDisease(userSymptoms);
 
 
 
