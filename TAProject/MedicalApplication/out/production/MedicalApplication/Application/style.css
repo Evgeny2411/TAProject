@@ -1,0 +1,14 @@
+GridPane{
+    -fx-background-image: url(../mainIcon.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 300px;
+    -fx-background-position: left bottom;
+}
+Button{
+    -fx-border-radius: 0;
+    -fx-background-color: #F3EFEF;
+    -fx-border-color: #eeeeee;
+}
+Button:hover{
+    -fx-background-color: #efbfbf;
+}
